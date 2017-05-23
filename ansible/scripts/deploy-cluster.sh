@@ -17,4 +17,4 @@
 . ./init.sh
 
 inventory=${INVENTORY:-${INVENTORY_DIR}/inventory}
-ansible-playbook -vvvv -i ${inventory} ${PLAYBOOKS_DIR}/deploy-cluster.yml "$@"
+ansible-playbook -i ${inventory} ${PLAYBOOKS_DIR}/deploy-cluster.yml "$@"
